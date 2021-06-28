@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Module 6 Lab</title>
+</head>
+
+
+<body>
+
+
+
+<div class = "container-lg">
+<div class="navbar p-3 my-3 border">
+        <a href="#about"><img src="https://img.icons8.com/ios-glyphs/30/000000/about-us-male.png"/ width="30" height="30">About Us</a>
+        
+        <a href="#services"><img src="https://img.icons8.com/ios/50/000000/service.png"/ width="30" height="30">Services</a>
+	<a href="#experts"><img src="https://img.icons8.com/ios/50/000000/doctor-male.png"/ width="30" height="30">Our Experts</a>
+        <a href="#appointment"><img src="https://img.icons8.com/material-outlined/24/000000/appointment-scheduling--v2.png"/ width="30" height="30">Book Appointment</a>
+    </div>
+<br>
+
+    <nav class="navbari p-3 my-3 ">
+        <h1><img src="images/company_logo.png" width="130" height="130">Babushka's Physiotherapy Clinic</h1>
+	
+    </nav>
+
+    <div id="about" class="bg-light p-3 my-3 border">
+        <h2>About Us</h2>
+        
+        <p style="font-size: 25px; padding-left: 1.5rem">Relieve pain, improve mobility, enhance functionality, boost health, and reduce the need for pain medications <br> Located at:<br>  Ottawa ON <br> 2637 Laurier Ave. East <br> 613-555-8888</p>
+    </div>
+   
+<div id="services" class="bg-light p-3 my-3 border">
+    <table class="table table-light table-hover table-striped">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Service</h2></th>
+                <th scope="col"><h2>Physiotherapist</h2></th>
+		<th scope="col"><h2>Price</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Back Pain</td>
+                <td>Anabel Chan</td>
+		<td>$ 300</td>
+            </tr>
+            <tr>
+                <td>Knee Pain</td>
+                <td>Ameen Salam</td>
+		<td>$ 200</td>
+            </tr>
+            <tr>
+                <td>Neck Pain</td>
+                <td>Chris Jason</td>
+		<td>$ 150</td>
+            </tr>
+	    <tr>
+                <td>Shoulder Pain</td>
+                <td>Ameen Salam</td>
+		<td>$ 100</td>
+            </tr>
+	    <tr>
+                <td>Stiffness</td>
+                <td>Chris Jason</td>
+		<td>$ 50</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="experts" class="bg-light p-3 my-3 border">
+<h2>Meet the Physicians!</h2>
+<br>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/ameen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p style="font-size: 18px" class="card-text">Dr. Ameen completed his Graduation (BPT) from School Of Medical Education, Gandinagar, Kottayam. He practiced in Thengana Medical Mission hospital for 5 years in India.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/anabel.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p style="font-size: 18px" class="card-text">Ms. Anabel completed her Bachelor’s degree in Physiotherapy from Ago Medical and Educational Center, Legaspi City, Philippines in 1998.</p>
+            </div>
+        </div>
+	<div class="card" style="width: 18rem;">
+            <img src="images/chris.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p style="font-size: 18px" class="card-text">Christopher Jason A. Diaz obtained his Bachelor of Science in Physical Therapy from Far Eastern University Nicanor Reyes Medical Foundation in Philippines in 2007.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+      
+<div id="appointment" class="bg-light p-3 my-3 border"  style="font-size: 18px">
+    <h2>Booking Service</h2>
+
+    <p style="font-size: 18px">This information is confidential and will not be shared</p> <br>
+<form>
+	<div class="mb-2">
+	
+ 	 <label for="appointmenttime">Appointment Date:</label>
+	 <input type="datetime-local" id="appointmenttime" name="appointmenttime">
+	
+	<br>
+	 </div>
+	
+	<div class="mb-2">
+	<p class="form-label">Choose your expert:</p>
+		<select id="doctor">
+			<option value="ameen">Dr. Ameen</option>
+			<option value="anabel">Ms. Anabel</option>
+			<option value="christopher">Christopher Diaz</option>
+			<option value="None" selected="selected">None</option>
+		</select>
+</div>
+	<br>
+<div class="mb-2">
+              <label for="name" class="form-label">Your Full Name:</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+	<br>
+	 <div class="mb-2">
+              <label for="phone" class="form-label">Your Phone Number:</label>
+              <input type="tel" id="phone" class="form-control">
+
+            </div>
+	<br>
+	<p class="form-label">Service:</p>
+
+            <div class="form-check" style="font-size: 18px">
+              <input class="form-check-input" type="checkbox" value="Neck_Pain" id="neckpain">
+              <label class="form-check-label" for="neckpain">
+                Neck Pain
+              </label>
+            </div>
+            <div class="form-check" style="font-size: 18px">
+              <input class="form-check-input" type="checkbox" value="" id="shoulderpain">
+              <label class="form-check-label" for="shoulderpain">
+                Shoulder Pain
+              </label>
+            </div>
+            <div class="form-check" style="font-size: 18px">
+              <input class="form-check-input" type="checkbox" value="" id="kneepain">
+              <label class="form-check-label" for="kneepain">
+                Knee Pain
+              </label>
+            </div>
+            <div class="form-check" style="font-size: 18px">
+              <input class="form-check-input" type="checkbox" value="" id="backpain">
+              <label class="form-check-label" for="backpain">
+                Back Pain
+              </label>
+            </div>
+            <div class="form-check" style="font-size: 18px">
+              <input class="form-check-input" type="checkbox" value="" id="stiffness">
+              <label class="form-check-label" for="stiffness">
+                Stiffness
+              </label>
+            </div>
+         <br>
+	<h3>Payment</h3>
+	
+	<label for="number" class="form-label">Credit Card:</label>
+              <input type="text" class="form-control" id="number">
+
+ <input type="button" class="btn btn-primary" onclick="alert('Your appointment has been scheduled!');return false;" value="Submit & Pay" />
+          
+        </form>
+</div>
+    </div>      
+           
+	
+	
+    
+	
+	<footer class="text-muted py-5 bg-light">
+        <div class="container">
+        <p class="float-end mb-1">
+        </p>
+      <p class="mb-1">Site Created By Moi</p>
+    </div>
+  </footer>
+
+ 
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
